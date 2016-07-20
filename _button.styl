@@ -1,0 +1,137 @@
+// -*- mode: stylus -*-
+
+/// Vars.
+
+$button-ysd-fz       = 14px
+$button-ysd-bdrz     = 4px
+$button-ysd-h        = 2rem
+$button-ysd-miw      = 5.25rem
+$button-ysd-miw-icon = 5.25rem + 1rem
+
+$button-ysd-icon-mr-1  = 0.375rem
+$button-ysd-icon-mr-2  = 0.625rem
+
+// Theme.
+$button-ysd-pc  = #00a0e8
+$button-ysd-bgc = #fff
+$button-ysd-cc  = #555
+$button-ysd-bdc = #d3d3d3
+$button-ysd-bdc-hover = #46b5e8
+
+
+/// Ysd button default.
+
+button-ysd()
+  fz   $button-ysd-fz
+  bdrz $button-ysd-bdrz
+  h    $button-ysd-h
+  miw  $button-ysd-miw
+  
+  bd1($button-ysd-bdc)
+  cc $button-ysd-cc $button-ysd-bgc
+
+  trans all 0.2s ease-in-out 0s
+
+  &:hover
+    bdc $button-ysd-bdc-hover
+    cc  $button-ysd-pc
+
+  &:active
+    shadow 0 0 6px rgba($button-ysd-pc, 0.2)
+
+
+button-ysd-secondary()
+  cc $button-ysd-cc #f6f6f6
+
+
+button-ysd-theme($bgc, $bgc-hover, $bgc-active)
+  bdc $bgc
+  cc #fff $bgc
+
+  &:hover
+  &:active
+    cc #fff
+
+  &:hover
+    bg $bgc-hover
+    bdc $bgc-hover
+  &:active
+    bg $bgc-active
+    bdc $bgc-active
+
+// primary
+$button-ysd-primary-bgc-normal = #00a0e8
+$button-ysd-primary-bgc-hover  = #46b5e8
+$button-ysd-primary-bgc-active = #008ece
+
+button-ysd-primary()
+  button-ysd-theme(
+    $button-ysd-primary-bgc-normal,
+    $button-ysd-primary-bgc-hover,
+    $button-ysd-primary-bgc-active
+  )
+
+// success
+$button-ysd-success-bgc-normal = #70d445
+$button-ysd-success-bgc-hover  = #8ed470
+$button-ysd-success-bgc-active = #63ba3d
+
+button-ysd-success()
+  button-ysd-theme(
+    $button-ysd-success-bgc-normal,
+    $button-ysd-success-bgc-hover,
+    $button-ysd-success-bgc-active
+  )
+
+// error
+$button-ysd-error-bgc-normal = #ff6100
+$button-ysd-error-bgc-hover  = #ff8133
+$button-ysd-error-bgc-active = #e55800
+
+button-ysd-error()
+  button-ysd-theme(
+    $button-ysd-error-bgc-normal,
+    $button-ysd-error-bgc-hover,
+    $button-ysd-error-bgc-active
+  )
+
+// warning
+$button-ysd-warning-bgc-normal = #fac450
+$button-ysd-warning-bgc-hover  = #fad482
+$button-ysd-warning-bgc-active = #e0b048
+
+button-ysd-warning()
+  button-ysd-theme(
+    $button-ysd-warning-bgc-normal,
+    $button-ysd-warning-bgc-hover,
+    $button-ysd-warning-bgc-active
+  )
+
+
+
+
+/// Exports.
+  
+button-ysd-export($se = "button-ysd")
+  .{$se}
+    button-ysd()
+
+button-ysd-seconday-export($se = "button-ysd-seconday")
+  .{$se}
+    button-ysd-secondary()
+
+button-ysd-primary-export($se = "button-ysd-primary")
+  .{$se}
+    button-ysd-primary()
+
+button-ysd-success-export($se = "button-ysd-success")
+  .{$se}
+    button-ysd-success()
+
+button-ysd-error-export($se = "button-ysd-error")
+  .{$se}
+    button-ysd-error()
+
+button-ysd-warning-export($se = "button-ysd-warning")
+  .{$se}
+    button-ysd-warning()            

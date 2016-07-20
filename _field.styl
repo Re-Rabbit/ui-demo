@@ -1,0 +1,37 @@
+/// Field default
+
+$field-ysd-h = 2.25rem
+
+
+field-ysd()
+  bd1($field-bdc)
+  bdrz $field-bdrz
+  h $field-ysd-h
+  pad 0.45rem 0.8rem
+  pr 2rem
+  w a
+  miw 16rem
+
+  transition border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s
+  
+  &:active
+  &:hover
+  &.active
+  &.hover
+    bdc $ysd-pc
+
+  &:active
+  &.active
+    shadow 0 0 4px rgba($ysd-pc, 0.8)
+
+  &[disabled]
+    bg  $field-bgc-disabled
+    bdc $field-bdc
+
+
+
+/// Exports.
+    
+field-ysd-export($se = "field-ysd")
+  .{$se}
+    field-ysd()

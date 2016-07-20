@@ -1,0 +1,72 @@
+@require "styles/reset"
+@require "styles/layout"
+@require "styles/typo"
+
+$ysd-ff = "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif
+$ysd-pc = #00a0e8
+$ysd-cc-primary = #00a0e8
+$ysd-cc-success = #70d445
+$ysd-cc-error   = #ff6100
+$ysd-cc-warning = #fac450
+
+
+/// Reset.
+
+a
+  reset-theme()
+  text-decoration none
+  dis ib
+
+reset-box()
+
+body
+  reset-font()
+  reset-theme()
+  reset-space()
+  fz 16px
+  lh 1.5
+  ff $ysd-ff
+
+
+.demo-header
+  my 5rem
+.demo-button
+  dis ib
+  mx 0.5rem
+
+
+/// Export typo
+
+typo-display()
+
+
+
+/// Export layout utils
+
+layout-grid-base()
+layout-width-base()
+layout-width-hundred()
+layout-mar-bottom()  
+layout-con-base(800px)
+layout-text-center()
+
+
+/// Exports Common Components.
+  
+@require "Button/"
+@require "Field/"
+button-basic-export()
+field-basic-export()
+
+
+/// Exports styled Components.
+
+@require "_button"
+@require "_field"
+button-ysd-export()
+button-ysd-primary-export()
+button-ysd-success-export()
+button-ysd-error-export()
+button-ysd-warning-export()
+button-ysd-seconday-export()
+field-ysd-export()

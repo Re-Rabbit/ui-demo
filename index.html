@@ -1,0 +1,99 @@
+{# -*- mode: jinja2 -*- #}
+
+{% from "Button/index.html" import button  %}
+{% from "Field/index.html"  import trigger  %}
+
+{# YSD AddressPicker. #}
+
+{% macro AddressPicker(opts) %}
+  <div class="select select-ysd">
+    {{ trigger({ default: "请选择地区", classNames: ["field-ysd"] }) }}
+    <div></div>
+
+    <div class="select-options-container">
+      <div class="select-options">
+        <ul class="">
+          <li><div>北京</div></li>
+          <li><div>山西省</div></li>
+          <li><div>河南省</div></li>
+        </ul>
+      </div>
+      <div class="select-options">
+        <ul class="">
+          <li><div>北京</div></li>
+          <li><div>山西省</div></li>
+          <li><div>河南省</div></li>
+        </ul>
+      </div>
+      <div class="select-options">
+        <ul class="">
+          <li><div>北京</div></li>
+          <li><div>山西省</div></li>
+          <li><div>河南省</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+
+
+{% block content %}
+  <section class="con">
+    <header class="demo-header tac">
+      <div class="display--1">YSD UI DEMO</div>
+      <div class="">YSD PROJECT UI README</div>
+    </header>
+
+    <section class="marb">
+      <h4 class="tac">@Components Field</h4>
+      <section class="marb">
+        <h6>AddressPicker</h6>
+        {{ AddressPicker({ default: "请选择地区" }) }}
+      </section>
+    </section>
+
+    <section class="marb">
+      <h4 class="tac">@Components Button</h4>
+      <section class="marb">
+        <h6>Button State</h6>
+        <div class="tac">
+          <div class="demo-button">
+            {{ button({ contents: "按钮", classNames: ["button-ysd"] }) }}
+          </div>
+          <div class="demo-button">
+            {{ button({ contents: "按钮", classNames: ["button-ysd button-ysd-seconday"] }) }}
+          </div>
+          <div class="demo-button">
+            {{ button({ contents: "确定", classNames: ["button-ysd button-ysd-primary"] }) }}
+          </div>
+          <div class="demo-button">
+            {{ button({ contents: "成功", classNames: ["button-ysd button-ysd-success"] }) }}
+          </div>
+          <div class="demo-button">
+            {{ button({ contents: "错误", classNames: ["button-ysd button-ysd-error"] }) }}
+          </div>
+          <div class="demo-button">
+            {{ button({ contents: "警告", classNames: ["button-ysd button-ysd-warning"] }) }}
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </section>
+{% endblock %}
+
+
+{% block styles %}
+  <link rel="stylesheet" href="index.css">
+{% endblock %}
+
+{% block scripts %}
+  <script src="/vendor.dll.js"></script>
+  <script src="/tool.dll.js"></script>
+  <script src="/commons.js"></script>
+  <script src="index.js"></script>
+{% endblock %}
+
+
+{% extends "tpls/page.html" %}
