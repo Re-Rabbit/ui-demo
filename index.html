@@ -1,14 +1,53 @@
-{# -*- mode: jinja2 -*- #}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{% from "Button/index.html" import button  %}
-{% from "Field/index.html"  import trigger %}
+     
+    
+  <link rel="stylesheet" href="index.css">
 
-{# YSD AddressPicker. #}
+     
+  </head>
+  <body>
+    
+  <section class="con">
+    <header class="demo-header tac">
+      <div class="display--1">YSD UI DEMO</div>
+      <div class="">YSD PROJECT UI README</div>
+    </header>
 
-{% macro AddressPicker(opts) %}
+    <section class="marb--xxl">
+      <h4 class="tac">@Components Field</h4>
+      <section class="marb">
+        <h6>AddressPicker</h6>
+        <div class="row">
+          <div class="grid width--4">
+            
   <div class="select select-ysd addresspicker">
     <div class="field-container">
-      {{ trigger({ default: "请选择地区", classNames: ["field-ysd"] }) }}
+      
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <div
+      class="field  field-ysd"
+      ><span class="field-placeholder">请选择地区</span></div>
+  
+  
+    
+
+
       <div class="field-icon field-icon-right">
         <span class="ion-ios-arrow-down"></span>
       </div>
@@ -42,15 +81,38 @@
     </div>
 
   </div>
-{% endmacro %}
 
-
-{# YSD DatePicker. #}
-
-{% macro DatePicker(opts) %}
+          </div>
+        </div>
+      </section>
+      <section class="marb">
+        <h6>DatePicker</h6>
+        <div class="row">
+          <div class="grid width--4">
+            
   <div class="select select-ysd datepicker">
     <div class="field-container">
-      {{ trigger({ default: "请选择日期", classNames: ["field-ysd"] }) }}
+      
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <div
+      class="field  field-ysd"
+      ><span class="field-placeholder">请选择日期</span></div>
+  
+  
+    
+
+
       <div class="field-icon field-icon-right">
         <span class="ion-ios-calendar-outline"></span>
       </div>
@@ -102,28 +164,199 @@
               </div>
             </div>
             <div class="datepicker-dates row">
-              {% for i in range(27, 31) %}
+              
                 <div class="datepicker-grid grid width--7-f">
-                  <div class="datepicker-cell nomm">{{ i }}</div>
+                  <div class="datepicker-cell nomm">27</div>
                 </div>
-              {% endfor %}
-              {% for i in range(1, 32) %}
+              
                 <div class="datepicker-grid grid width--7-f">
-                  <div class="datepicker-cell">{{ i }}</div>
+                  <div class="datepicker-cell nomm">28</div>
                 </div>
-              {% endfor %}
-              {% for i in range(1, 8) %}
+              
                 <div class="datepicker-grid grid width--7-f">
-                  <div class="datepicker-cell nomm">{{ i }}</div>
+                  <div class="datepicker-cell nomm">29</div>
                 </div>
-              {% endfor %}
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell nomm">30</div>
+                </div>
+              
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">1</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">2</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">3</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">4</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">5</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">6</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">7</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">8</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">9</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">10</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">11</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">12</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">13</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">14</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">15</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">16</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">17</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">18</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">19</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">20</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">21</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">22</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">23</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">24</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">25</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">26</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">27</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">28</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">29</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">30</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell">31</div>
+                </div>
+              
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell nomm">1</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell nomm">2</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell nomm">3</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell nomm">4</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell nomm">5</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell nomm">6</div>
+                </div>
+              
+                <div class="datepicker-grid grid width--7-f">
+                  <div class="datepicker-cell nomm">7</div>
+                </div>
+              
             </div>
           </div>
           <footer class="datepicker-footer">
             <span class="datepicker-action-today">今天</span>
 
             <div class="datepicker-action-check">
-              {{ button({ contents: "确定", classNames: ["button-small button-ysd button-ysd-primary"] }) }}
+              
+  
+  
+  
+  
+  
+  
+
+  
+    <button
+      type="button"
+      class="button button-small button-ysd button-ysd-primary"
+      >确定</button>
+      
+
+
             </div>
           </footer>
         </div>
@@ -131,31 +364,7 @@
     </div>
 
   </div>
-{% endmacro %}
 
-
-{% block content %}
-  <section class="con">
-    <header class="demo-header tac">
-      <div class="display--1">YSD UI DEMO</div>
-      <div class="">YSD PROJECT UI README</div>
-    </header>
-
-    <section class="marb--xxl">
-      <h4 class="tac">@Components Field</h4>
-      <section class="marb">
-        <h6>AddressPicker</h6>
-        <div class="row">
-          <div class="grid width--4">
-            {{ AddressPicker({ default: "请选择地区" }) }}
-          </div>
-        </div>
-      </section>
-      <section class="marb">
-        <h6>DatePicker</h6>
-        <div class="row">
-          <div class="grid width--4">
-            {{ DatePicker({ default: "请选择日期" }) }}
           </div>
         </div>
       </section>
@@ -167,41 +376,124 @@
         <h6>Button State</h6>
         <div class="">
           <div class="demo-button">
-            {{ button({ contents: "按钮", classNames: ["button-ysd"] }) }}
+            
+  
+  
+  
+  
+  
+  
+
+  
+    <button
+      type="button"
+      class="button button-ysd"
+      >按钮</button>
+      
+
+
           </div>
           <div class="demo-button">
-            {{ button({ contents: "按钮", classNames: ["button-ysd button-ysd-seconday"] }) }}
+            
+  
+  
+  
+  
+  
+  
+
+  
+    <button
+      type="button"
+      class="button button-ysd button-ysd-seconday"
+      >按钮</button>
+      
+
+
           </div>
           <div class="demo-button">
-            {{ button({ contents: "确定", classNames: ["button-ysd button-ysd-primary"] }) }}
+            
+  
+  
+  
+  
+  
+  
+
+  
+    <button
+      type="button"
+      class="button button-ysd button-ysd-primary"
+      >确定</button>
+      
+
+
           </div>
           <div class="demo-button">
-            {{ button({ contents: "成功", classNames: ["button-ysd button-ysd-success"] }) }}
+            
+  
+  
+  
+  
+  
+  
+
+  
+    <button
+      type="button"
+      class="button button-ysd button-ysd-success"
+      >成功</button>
+      
+
+
           </div>
           <div class="demo-button">
-            {{ button({ contents: "错误", classNames: ["button-ysd button-ysd-error"] }) }}
+            
+  
+  
+  
+  
+  
+  
+
+  
+    <button
+      type="button"
+      class="button button-ysd button-ysd-error"
+      >错误</button>
+      
+
+
           </div>
           <div class="demo-button">
-            {{ button({ contents: "警告", classNames: ["button-ysd button-ysd-warning"] }) }}
+            
+  
+  
+  
+  
+  
+  
+
+  
+    <button
+      type="button"
+      class="button button-ysd button-ysd-warning"
+      >警告</button>
+      
+
+
           </div>
         </div>
       </section>
     </section>
 
   </section>
-{% endblock %}
 
-
-{% block styles %}
-  <link rel="stylesheet" href="index.css">
-{% endblock %}
-
-{% block scripts %}
+    
   <script src="/vendor.dll.js"></script>
   <script src="/tool.dll.js"></script>
   <script src="/commons.js"></script>
   <script src="index.js"></script>
-{% endblock %}
 
-
-{% extends "tpls/page.html" %}
+  </body>
+</html>
