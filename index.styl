@@ -95,6 +95,7 @@ field-ysd-export()
   pad 0
   h 1.375rem
   miw 2.75rem
+.button-ysd  
 
 
 .select
@@ -214,7 +215,70 @@ field-ysd-export()
   fill(r)
   pad 0.625rem
   
-        
 
+
+
+/// Switch.
+.switch
+  pos rela
+  va top
+  dis ib
+  lh 1
+.switch-form
+  dis no
+.switch-placeholder
+  dis ib
+  size 1.25rem
+  bd1(#d3d3d3)
+  cur ptr
+  trans all 0.2s ease-in-out 0s
+
+  &:hover
+    bdc #898989
+
+  &-checkbox
+    bdrz 4px
+    pad ((1.25rem - 1rem) / 2)
+  &-radio
+    bdrz 50%
+    pad 5.5px
+
+.switch-checked
+  op 0
+  size 1rem
+  lh 1
+  cc #fff
+  va top
+
+.switch-checked-radio
+  dis ib
+  bg #fff
+  size 0.4rem
+  bdrz 50%
+
+.switch.active
+  .switch-placeholder
+    bg $ysd-pc
+    bdc $ysd-pc
+  .switch-checked
+    op 1
+
+
+/// Pagination.
+
+.pagination-btn
+  dis ib
+  .button
+    h 1.625rem
+    pad ((1.625rem - 1.3125rem) / 2) 0
+  .button-square
+    miw 1.625rem
+  .button-noborder
+    bd 0
+
+.pagination-count
+  .button
+    miw 4.125rem
+    
 
 @require "ionicons"

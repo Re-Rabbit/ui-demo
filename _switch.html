@@ -1,0 +1,44 @@
+{# -*- mode: jinja2 -*- #}
+
+{#
+
+Switch Templates.
+
+#}
+
+{# Switch seed. #}
+
+{% macro _switch(opts) %}
+  {% set type = opts.type | default("checkbox") %}
+  {% set classNames = opts.classNames | default([]) %}
+
+  <div class="switch switch-{{ type }} {{ classNames | join(" ") }}">
+    <div class="switch-placeholder switch-placeholder-{{ type }}">
+      {% if type == "checkbox" %}
+        <span class="switch-checked switch-checked-checkbox ion-md-checkmark"></span>
+      {% else %}
+        <span class="switch-checked switch-checked-radio "></span>
+      {% endif %}
+    </div>
+    <input
+      class="switch-form"
+      type="{{type}}"
+      />
+  </div>
+{% endmacro %}
+
+
+{% macro checkbox(opts) %}
+  {% set options = opts | assign({ type: "checkbox" }) %}
+  {{ _switch(options) }}
+{% endmacro %}
+
+{% macro radio(opts) %}
+  {% set options = opts | assign({ type: "radio" }) %}
+  {{ _switch(options) }}
+{% endmacro %}
+
+{% macro toggle(opts) %}
+  {% set options = opts | assign({ type: "toggle" }) %}
+  {{ _switch(options) }}
+{% endmacro %}

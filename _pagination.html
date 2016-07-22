@@ -1,0 +1,37 @@
+{# -*- mode: jinja2 -*- #}
+
+{% from "Button/index.html" import button %}
+
+{# YSD Pagination. #}
+
+{% macro ControlLeft() %}
+  <span class="ion-ios-arrow-back"></span>
+{% endmacro %}
+
+{% macro ControlRight() %}
+  <span class="ion-ios-arrow-forward"></span>
+{% endmacro %}
+
+{% macro Pagination(opts) %}
+  
+  <div class="pagination">
+    <div class="pagination-btn pagination-prev pagination-control">
+      {{ button({ contents: ControlLeft(), classNames: ["button-ysd", "button-square", "button-noborder"] }) }}
+    </div>
+    <div class="pagination-btn pagination-curr">
+      {{ button({ contents: 2, classNames: ["button-ysd", "button-square", "button-border"] }) }}
+    </div>
+    <div class="pagination-btn pagination-split">
+      {{ button({ contents: "/", classNames: ["button-ysd", "button-square", "button-noborder"] }) }}
+    </div>
+    <div class="pagination-btn pagination-sum">
+      {{ button({ contents: "5", classNames: ["button-ysd", "button-square", "button-noborder"] }) }}
+    </div>
+    <div class="pagination-btn pagination-next pagination-control">
+      {{ button({ contents: ControlRight(), classNames: ["button-ysd", "button-square", "button-noborder"] }) }}
+    </div>
+    <div class="pagination-btn pagination-count">
+      {{ button({ contents: "20条 / 页", classNames: ["button-ysd"] }) }}
+    </div>
+  </div>
+{% endmacro %}

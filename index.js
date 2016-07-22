@@ -20,3 +20,7 @@ $('.datepicker').on('click', '.field', evt => {
     .removeClass('active')
 })
  
+$('.switch').on('click', evt => {
+  $(evt.delegateTarget)
+    .toggleClass('active')
+})

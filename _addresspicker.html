@@ -1,0 +1,44 @@
+{# -*- mode: jinja2 -*- #}
+
+{% from "Field/index.html"  import trigger %}
+
+{# YSD DatePicker. #}
+
+{% macro AddressPicker(opts) %}
+  <div class="select select-ysd addresspicker">
+    <div class="field-container">
+      {{ trigger({ default: "请选择地区", classNames: ["field-ysd"] }) }}
+      <div class="field-icon field-icon-right">
+        <span class="ion-ios-arrow-down"></span>
+      </div>
+    </div>
+
+    <div class="select-options-container addresspicker-options-container row">
+      <div class="select-options addresspicker-options grid width--3-f">
+        <ul class="">
+          <li><div class="select-option checked">北京</div></li>
+          <li><div class="select-option">山西省</div></li>
+          <li><div class="select-option">河南省</div></li>
+        </ul>
+      </div>
+      <div class="select-options addresspicker-options grid width--3-f">
+        <ul class="">
+          <li><div class="select-option active">北京</div></li>
+          <li><div class="select-option">山西省</div></li>
+          <li><div class="select-option">河南省</div></li>
+        </ul>
+      </div>
+      <div class="select-options addresspicker-options grid width--3-f">
+        <ul class="">
+          <li><div class="select-option">北京</div></li>
+          <li><div class="select-option">山西省</div></li>
+          <li><div class="select-option">河南省</div></li>
+          <li><div class="select-option">北京</div></li>
+          <li><div class="select-option">山西省</div></li>
+          <li><div class="select-option">河南省</div></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+{% endmacro %}
