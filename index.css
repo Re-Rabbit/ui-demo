@@ -435,6 +435,7 @@ body {
   height: 1.375rem;
   min-width: 2.75rem;
 }
+.button-ysd,
 .select {
   position: relative;
 }
@@ -573,6 +574,72 @@ body {
   bottom: 0;
   padding: 0.625rem;
 }
+.switch {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  line-height: 1;
+}
+.switch-form {
+  display: none;
+}
+.switch-placeholder {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
+}
+.switch-placeholder:hover {
+  border-color: #898989;
+}
+.switch-placeholder-checkbox {
+  border-radius: 4px;
+  padding: 0.125rem;
+}
+.switch-placeholder-radio {
+  border-radius: 50%;
+  padding: 5.5px;
+}
+.switch-checked {
+  opacity: 0;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1;
+  color: #fff;
+  vertical-align: top;
+}
+.switch-checked-radio {
+  display: inline-block;
+  background: #fff;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+.switch.active .switch-placeholder {
+  background: #00a0e8;
+  border-color: #00a0e8;
+}
+.switch.active .switch-checked {
+  opacity: 1;
+}
+.pagination-btn {
+  display: inline-block;
+}
+.pagination-btn .button {
+  height: 1.625rem;
+  padding: 0.15625rem 0;
+}
+.pagination-btn .button-square {
+  min-width: 1.625rem;
+}
+.pagination-btn .button-noborder {
+  border: 0;
+}
+.pagination-count .button {
+  min-width: 4.125rem;
+}
 @charset "UTF-8";
 /*
   Ionicons, v3.0.0-alpha.3
@@ -588,7 +655,7 @@ body {
 @font-face {
   font-family: "Ionicons";
   src: url("fonts/ionicons.eot?v=3.0.0-alpha.3");
-  src: url("fonts/ionicons.eot?v=3.0.0-alpha.3#iefix") format("embedded-opentype"), url("fonts/ionicons.woff2?v=3.0.0-alpha.3") format("woff2"), url("fonts/ionicons.woff?v=3.0.0-alpha.3") format("woff"), url("fonts/ionicons.ttf?v=3.0.0-alpha.3") format("truetype"), url("fonts/ionicons.svg?v=3.0.0-alpha.3#Ionicons") format("svg");
+  src: url("fonts/ionicons.eot?v=3.0.0-alpha.3#iefix") format("embedded-opentype"), url("fonts/ionicons.woff2?v=3.0.0-alpha.3") format("woff2"), url("fonts/ionicons.woff?v=3.0.0-alpha.3") format("woff"), url("fonts/ionicons.ttf?v=3.0.0-alpha.3") format("truetype"), url("../fonts/ionicons.svg?v=3.0.0-alpha.3#Ionicons") format("svg");
   font-weight: 400;
   font-style: normal;
 }
