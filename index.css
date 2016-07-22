@@ -590,6 +590,7 @@ body {
   border: 1px solid #d3d3d3;
   cursor: pointer;
   transition: all 0.2s ease-in-out 0s;
+  text-align: center;
 }
 .switch-placeholder:hover {
   border-color: #898989;
