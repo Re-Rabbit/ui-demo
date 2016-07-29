@@ -21,12 +21,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)('.addresspicker').on('click', '.field', function (evt) {
   (0, _jquery2.default)(evt.delegateTarget).find('.select-options-container').toggleClass('active');
+  (0, _jquery2.default)(this).toggleClass('active');
 }).on('click', '.select-option', function (evt) {
   (0, _jquery2.default)(evt.delegateTarget).find('.select-options-container').removeClass('active');
 });
 
 (0, _jquery2.default)('.datepicker').on('click', '.field', function (evt) {
   (0, _jquery2.default)(evt.delegateTarget).find('.select-options-container').addClass('active');
+  (0, _jquery2.default)(this).toggleClass('active');
 }).on('click', '.datepicker-header, .datepicker-cell, .button', function (evt) {
   (0, _jquery2.default)(evt.delegateTarget).find('.select-options-container').removeClass('active');
 });
